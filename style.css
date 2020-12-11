@@ -1,0 +1,536 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: lightgray;
+    font-family: 'Oxygen', sans-serif;
+}
+
+#wait {
+    background-color: #660000;
+    color: white;
+    height: 55px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    font-size: 18px;
+    text-align: right;
+    padding: 15px;
+}
+
+font {
+    float: left;
+    letter-spacing: 2px;
+}
+
+span {
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+#wait>i {
+    margin-right: 15px;
+}
+
+#wait>i:hover {
+   opacity: 0.8;
+}
+
+#context {
+    width: 80%;
+    margin: auto;
+    height: auto;
+}
+
+header {
+    width: 100%;
+    height: 250px;
+    box-shadow: 0 2px 8px 2px rgba(4, 94, 94, 0.829);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: relative;
+    color:#660000;
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 70px;
+    background-color: black;
+    margin-bottom: 5px;
+}
+
+#headerresim  {
+    width: 100%;
+    height: 250px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    opacity: 0.8;
+} 
+
+#centered {
+    position:absolute ;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: 'Berkshire Swash', cursive;
+}
+
+section {
+    width: 100%;
+    height: auto;
+    background-color:#660000;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0 2px 8px 2px rgba(4, 94, 94, 0.829);
+    margin-top: 15px;
+    overflow: auto;
+    color: white;
+}
+
+
+nav {
+    width: 20%;
+    height: auto;
+    float: left;
+    margin-top: 10px;
+    color: white;
+}
+
+nav ul {
+    width: auto;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+nav li {
+    list-style-type: none;
+    color: white;
+}
+
+nav li {
+    height: 50px;
+    line-height: 50px;
+    text-decoration: none;
+    color: white;
+    border-bottom: 1px solid black;
+    padding-left: 20px;
+    display: block;
+}
+
+nav li:hover {
+    color:white;
+    background-color:#7e2323;
+}
+
+a {
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+i {
+    margin-right: 10px;
+}
+
+main {
+    float: left;
+    height: auto;
+    width: 80%;
+    padding: 10px;
+}
+
+.içerik {
+    width: 48%;
+    height: auto;
+    display: inline-block;
+    margin-right: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px 2px rgba(4, 94, 94, 0.829);
+    background-size: cover;
+}
+
+.rsm {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transition: opacity 0.8s;
+    background-size: cover;
+}
+
+.pai {
+    width: 45%;
+    height: 300px;
+    border-radius: 10px;
+    transition: opacity 0.8s;
+    background-size: cover; 
+    float: right;
+    margin-right: 20px;
+    
+}
+
+.öök {
+    width: 45%;
+    height: 300px;
+    border-radius: 10px;
+    transition: opacity 0.8s;
+    background-size: cover; 
+    float: right;
+    margin-right: 20px;
+    margin-top: 30px;
+}
+
+.aae {
+    width: 45%;
+    height: 300px;
+    border-radius: 10px;
+    transition: opacity 0.8s;
+    background-size: cover;
+    float: left;
+    margin-left: 20px ;
+}
+
+.llm {
+    width: 45%;
+    height: 300px;
+    border-radius: 10px;
+    transition: opacity 0.8s;
+    background-size: cover;
+    float: left;
+    margin-left: 20px ;
+    margin-top: 30px;
+}
+
+
+h5 {
+    margin: 10px;
+    color: white;
+}
+
+.text {
+    margin: 10px;
+    color: white;
+}
+
+.buton {
+    color: #660000;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.buton:active {
+    background-color: cyan;
+}
+
+.buton:link {
+    display: block;
+    width: 150px;
+    height: 45px;
+    padding: 10px 20px;
+    background-color: white;
+    color:rgba(128, 0, 0, 0.829);
+    text-decoration: none;
+    margin: 15px;
+    border-radius: 10px;
+}
+
+.buton:hover {
+    opacity: 0.8;
+}
+
+.rsm:hover {
+    opacity: 0.6;
+}
+
+footer {
+    width: 100%;
+    height: 75px;
+    background-color: black;
+    color: white;
+    line-height: 75px;
+    text-align: center;
+    box-shadow: 0 2px 8px 2px rgba(4, 94, 94, 0.829)
+}
+
+h1 {
+    text-align: center;
+    background-color: black;
+    color: white;
+    height: 50px;
+    line-height: 50px;
+    margin:0 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px 2px rgba(4, 94, 94, 0.829)
+}
+
+#hakkimizda {
+    width: 350px;
+    height: 300px;
+    float: left;
+    border-radius: 10px;
+    margin: 25px;
+    transition: opacity 0.8s;
+}
+
+#hakkimizda:hover {
+    opacity: 0.6;
+}
+
+.hakyazı {
+    margin-right: 15px;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-indent: 40px;
+    color: white;
+}
+
+.galres {
+    width: 22%;
+    height: 200px;
+    border-radius: 5px;
+    opacity: 0.8;
+    box-shadow: 0 2px 8px 2px rgba(4, 94, 94, 0.829);
+    margin: 10px;
+    transition: opacity 0.6s;
+    object-fit: cover;
+    
+
+}
+
+.galres:hover {
+    opacity: 1;
+    border: 5px solid white;
+    cursor: pointer;
+}
+
+.lll:link {
+    text-decoration: none;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+}
+
+#il {
+    text-align: center;
+    color: white;
+    
+}
+
+.second {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+}
+
+#firstp {
+    text-indent: 20px;
+}
+
+#ppp {
+    width: 100%;
+    height: 500px;
+    border-radius: 10px;
+} 
+
+.bot {
+    color: #660000;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+.bot:active {
+    background-color: cyan;
+}
+
+.bot:link {
+    display: block;
+    width: 50%;
+    height: 45px;
+    padding: 10px 20px;
+    background-color: white;
+    color:rgba(128, 0, 0, 0.829);
+    text-decoration: none;
+    margin: 2px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+.bot:hover {
+    opacity: 0.8;
+}
+
+.sss {
+    color: #660000;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+.sss:active {
+    background-color: cyan;
+}
+
+.sss:link {
+    display: block;
+    width: 50%;
+    height: 45px;
+    padding: 10px 20px;
+    background-color: white;
+    color:rgba(128, 0, 0, 0.829);
+    text-decoration: none;
+    margin: 15px;
+    border-radius: 10px;
+    margin-left: 485px;
+    margin-top: 0%;
+}
+
+.sss:hover {
+    opacity: 0.8;
+}
+
+.eee {
+    width: 50%;
+    height: 300px;
+    border-radius: 10px; 
+    float: left;
+    padding: 0 50px 0 10px;
+}
+
+.ogu {
+   margin: auto;
+   font-size: 25px;
+   text-indent: 25px;
+   border-radius: 10px;
+}
+
+.mnm {
+    width: 50%;
+    height: 300px;
+    border-radius: 10px; 
+    float: left;
+    padding: 0 50px 0 10px;
+}
+
+.es {
+    margin: auto;
+    font-size: 25px;
+    text-indent: 25px; 
+}
+
+.ing {
+    width: 50%;
+    height: 300px;
+    border-radius: 10px; 
+    float: right;
+    padding: 0 50px 0 10px;
+}
+
+.par {
+   margin: auto;
+   font-size: 25px;
+   text-indent: 25px;
+   border-radius: 10px;
+}
+
+.hph {
+    width: 50%;
+    height: 300px;
+    margin: 0 auto;
+    display: block;
+}
+
+#ggg {
+    width: 50%;
+    height: 300px;
+    border-radius: 10px; 
+    float: left;
+    padding: 0 50px 0 10px;
+}
+
+#mmm {
+    width: 50%;
+    height: 300px;
+    border-radius: 10px; 
+    float: right;
+    padding: 0 50px 0 10px;
+}
+
+.rig {
+    width: 48%;
+    height: auto;
+    display: inline-block;
+    margin-right: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px 2px rgba(4, 94, 94, 0.829);
+    background-size: cover;
+}
+
+.cl {
+    width: 48%;
+    height: auto;
+    display: inline-block;
+    margin-right: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px 2px rgba(4, 94, 94, 0.829);
+    background-size: cover;
+    padding-top: 12px;
+}
+
+.oc {
+    width: 48%;
+    height: auto;
+    display: inline-block;
+    margin-right: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px 2px rgba(4, 94, 94, 0.829);
+    background-size: cover;
+    margin-top: 0px;
+}
+
+.vb {
+    width: 48%;
+    height: auto;
+    display: inline-block;
+    margin-right: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px 2px rgba(4, 94, 94, 0.829);
+    background-size: cover;
+    margin-top: 10px;
+}
+
+.last {
+    width: 48%;
+    height: auto;
+    display: inline-block;
+    margin-right: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px 2px rgba(4, 94, 94, 0.829);
+    background-size: cover;
+    margin-top: 10px;
+}
+
+.liste {
+    font-size: 25px;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
